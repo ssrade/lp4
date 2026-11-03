@@ -1,0 +1,234 @@
+[
+  {
+    "name": "Autoencoder_credit.ipynb",
+    "path": "Autoencoder_credit.ipynb",
+    "type": "file",
+    "size": 39484,
+    "modified": "2026-11-03T03:57:54.495Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "Autoencoder_ecg.ipynb",
+    "path": "Autoencoder_ecg.ipynb",
+    "type": "file",
+    "size": 55966,
+    "modified": "2026-11-03T03:57:54.495Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "Autoencoder_energy_consumption.ipynb",
+    "path": "Autoencoder_energy_consumption.ipynb",
+    "type": "file",
+    "size": 48606,
+    "modified": "2026-11-03T03:57:54.496Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "Autoencoder_NASA.ipynb",
+    "path": "Autoencoder_NASA.ipynb",
+    "type": "file",
+    "size": 53771,
+    "modified": "2026-11-03T03:57:54.496Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "Autoencoder_signmnist.ipynb",
+    "path": "Autoencoder_signmnist.ipynb",
+    "type": "file",
+    "size": 90138,
+    "modified": "2026-11-03T03:57:54.497Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CBOW_document3.ipynb",
+    "path": "CBOW_document3.ipynb",
+    "type": "file",
+    "size": 35995,
+    "modified": "2026-11-03T03:57:54.497Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CBOW_document3easy.ipynb",
+    "path": "CBOW_document3easy.ipynb",
+    "type": "file",
+    "size": 8911,
+    "modified": "2026-11-03T03:57:54.498Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CBOW_IMDB.ipynb",
+    "path": "CBOW_IMDB.ipynb",
+    "type": "file",
+    "size": 83059,
+    "modified": "2026-11-03T03:57:54.498Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CBOW_Recommedation.ipynb",
+    "path": "CBOW_Recommedation.ipynb",
+    "type": "file",
+    "size": 7066,
+    "modified": "2026-11-03T03:57:54.499Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CBOW_twitter.ipynb",
+    "path": "CBOW_twitter.ipynb",
+    "type": "file",
+    "size": 6313,
+    "modified": "2026-11-03T03:57:54.499Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CBOW.ipynb",
+    "path": "CBOW.ipynb",
+    "type": "file",
+    "size": 26912,
+    "modified": "2026-11-03T03:57:54.499Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CNN_Img_CIFAR.ipynb",
+    "path": "CNN_Img_CIFAR.ipynb",
+    "type": "file",
+    "size": 162802,
+    "modified": "2026-11-03T03:57:54.500Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CNN_Img_mnist.ipynb",
+    "path": "CNN_Img_mnist.ipynb",
+    "type": "file",
+    "size": 98095,
+    "modified": "2026-11-03T03:57:54.500Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "CNN_sign_mnist.ipynb",
+    "path": "CNN_sign_mnist.ipynb",
+    "type": "file",
+    "size": 153791,
+    "modified": "2026-11-03T03:57:54.504Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "FNN_cifar-10.ipynb",
+    "path": "FNN_cifar-10.ipynb",
+    "type": "file",
+    "size": 148930,
+    "modified": "2026-11-03T03:57:54.505Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "FNN_Fashion.ipynb",
+    "path": "FNN_Fashion.ipynb",
+    "type": "file",
+    "size": 135897,
+    "modified": "2026-11-03T03:57:54.505Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "FNN_handwritten_mnist.ipynb",
+    "path": "FNN_handwritten_mnist.ipynb",
+    "type": "file",
+    "size": 162671,
+    "modified": "2026-11-03T03:57:54.506Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "FNN_sign_mnist.ipynb",
+    "path": "FNN_sign_mnist.ipynb",
+    "type": "file",
+    "size": 153499,
+    "modified": "2026-11-03T03:57:54.506Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "lp4.zip",
+    "path": "lp4.zip",
+    "type": "file",
+    "size": 1155628,
+    "modified": "2026-11-03T03:57:54.524Z",
+    "extension": ".zip"
+  },
+  {
+    "name": "lp4latest.zip",
+    "path": "lp4latest.zip",
+    "type": "file",
+    "size": 1823096,
+    "modified": "2026-11-03T03:57:54.526Z",
+    "extension": ".zip"
+  },
+  {
+    "name": "ObjectDetec_caltech100.ipynb",
+    "path": "ObjectDetec_caltech100.ipynb",
+    "type": "file",
+    "size": 268814,
+    "modified": "2026-11-03T03:57:54.507Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "ObjectDetect_Intel.ipynb",
+    "path": "ObjectDetect_Intel.ipynb",
+    "type": "file",
+    "size": 314368,
+    "modified": "2026-11-03T03:57:54.507Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "ObjetDetec_Fashion.ipynb",
+    "path": "ObjetDetec_Fashion.ipynb",
+    "type": "file",
+    "size": 113009,
+    "modified": "2026-11-03T03:57:54.508Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "PS- 2A.ipynb",
+    "path": "PS- 2A.ipynb",
+    "type": "file",
+    "size": 215653,
+    "modified": "2026-11-03T03:57:54.509Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "PS- 2B.ipynb",
+    "path": "PS- 2B.ipynb",
+    "type": "file",
+    "size": 76595,
+    "modified": "2026-11-03T03:57:54.511Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "PS- 5A.ipynb",
+    "path": "PS- 5A.ipynb",
+    "type": "file",
+    "size": 5140,
+    "modified": "2026-11-03T03:57:54.513Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "PS- 5B.ipynb",
+    "path": "PS- 5B.ipynb",
+    "type": "file",
+    "size": 249782,
+    "modified": "2026-11-03T03:57:54.514Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "PS- 5C.ipynb",
+    "path": "PS- 5C.ipynb",
+    "type": "file",
+    "size": 62245,
+    "modified": "2026-11-03T03:57:54.515Z",
+    "extension": ".ipynb"
+  },
+  {
+    "name": "tp.ipynb",
+    "path": "tp.ipynb",
+    "type": "file",
+    "size": 50369,
+    "modified": "2026-11-03T03:57:54.515Z",
+    "extension": ".ipynb"
+  }
+]

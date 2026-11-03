@@ -1,26 +1,337 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ===== Jupyter Notebook Accurate Styling ===== */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Base */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  background: #f5f5f5;
+  color: #333;
+  margin: 0;
+}
+
+/* Toolbar buttons */
+.toolbar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  background: #f5f5f5;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.toolbar-btn:hover {
+  background: #e0e0e0;
+  border-color: #ccc;
+  color: #333;
+}
+
+.toolbar-btn:active {
+  background: #d0d0d0;
+}
+
+/* ===== Notebook Cell Styles ===== */
+.notebook-cell {
+  padding: 4px 0;
+}
+
+/* Code cell input - Jupyter-style with colored left border */
+.notebook-cell .flex-1.border {
+  position: relative;
+}
+
+.notebook-cell .flex-1.border::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  width: 4px;
+  background: #42a5f5;
+  border-radius: 2px 0 0 2px;
+}
+
+/* Code styling */
+.notebook-cell pre {
+  margin: 0;
+  line-height: 1.5;
+  tab-size: 4;
+}
+
+.notebook-cell code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Monaco, "Courier New", monospace;
+  font-size: 13px;
+}
+
+/* ===== Notebook markdown cell styling ===== */
+.notebook-markdown {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.notebook-markdown h1 {
+  font-size: 2em;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin: 0.67em 0;
+  font-weight: 600;
+}
+
+.notebook-markdown h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.3em;
+  margin: 0.75em 0 0.25em;
+  font-weight: 600;
+}
+
+.notebook-markdown h3 {
+  font-size: 1.25em;
+  margin: 0.75em 0 0.25em;
+  font-weight: 600;
+}
+
+.notebook-markdown h4, .notebook-markdown h5, .notebook-markdown h6 {
+  font-weight: 600;
+  margin: 0.5em 0 0.25em;
+}
+
+.notebook-markdown p {
+  margin: 0.5em 0;
+}
+
+.notebook-markdown ul, .notebook-markdown ol {
+  padding-left: 2em;
+  margin: 0.5em 0;
+}
+
+.notebook-markdown li {
+  margin: 0.15em 0;
+}
+
+.notebook-markdown code {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Monaco, "Courier New", monospace;
+  font-size: 0.9em;
+  background: #f0f0f0;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+}
+
+.notebook-markdown pre {
+  background: #f7f7f7;
+  padding: 0.75em 1em;
+  border-radius: 3px;
+  overflow-x: auto;
+  border: 1px solid #e0e0e0;
+}
+
+.notebook-markdown pre code {
+  background: none;
+  padding: 0;
+}
+
+.notebook-markdown blockquote {
+  border-left: 4px solid #e0e0e0;
+  padding: 0 1em;
+  margin: 0.5em 0;
+  color: #666;
+}
+
+.notebook-markdown a {
+  color: #2196F3;
+  text-decoration: none;
+}
+
+.notebook-markdown a:hover {
+  text-decoration: underline;
+}
+
+.notebook-markdown table {
+  border-collapse: collapse;
+  margin: 0.5em 0;
+  width: auto;
+}
+
+.notebook-markdown th, .notebook-markdown td {
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+  text-align: left;
+}
+
+.notebook-markdown th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.notebook-markdown img {
+  max-width: 100%;
+}
+
+/* ===== HTML Output Tables (pandas DataFrames) ===== */
+.notebook-html-output table {
+  border-collapse: collapse;
+  font-size: 12px;
+  margin: 0;
+}
+
+.notebook-html-output table th,
+.notebook-html-output table td {
+  border: 1px solid #e0e0e0;
+  padding: 4px 8px;
+  text-align: right;
+}
+
+.notebook-html-output table th {
+  background: #f5f5f5;
+  font-weight: 600;
+  text-align: center;
+}
+
+.notebook-html-output table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+.notebook-html-output .dataframe {
+  border: none;
+}
+
+.notebook-html-output .dataframe th,
+.notebook-html-output .dataframe td {
+  border: 1px solid #e0e0e0;
+}
+
+/* ===== Highlight.js theme — close to Jupyter's CodeMirror ===== */
+.hljs {
+  color: #333;
+}
+
+.hljs-keyword {
+  color: #008000;
+  font-weight: bold;
+}
+
+.hljs-built_in {
+  color: #008000;
+}
+
+.hljs-literal {
+  color: #008000;
+  font-weight: bold;
+}
+
+.hljs-type {
+  color: #008000;
+}
+
+.hljs-number {
+  color: #080;
+}
+
+.hljs-string {
+  color: #BA2121;
+}
+
+.hljs-comment {
+  color: #408080;
+  font-style: italic;
+}
+
+.hljs-doctag {
+  color: #BA2121;
+  font-weight: bold;
+}
+
+.hljs-function {
+  color: #333;
+}
+
+.hljs-title {
+  color: #00F;
+}
+
+.hljs-title.function_ {
+  color: #00F;
+}
+
+.hljs-params {
+  color: #333;
+}
+
+.hljs-variable {
+  color: #333;
+}
+
+.hljs-attr {
+  color: #7D9029;
+}
+
+.hljs-selector-tag {
+  color: #008000;
+  font-weight: bold;
+}
+
+.hljs-selector-class {
+  color: #00F;
+}
+
+.hljs-selector-id {
+  color: #00F;
+}
+
+.hljs-meta {
+  color: #AA22FF;
+}
+
+.hljs-name {
+  color: #008000;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  color: #333;
+}
+
+.hljs-symbol {
+  color: #19177C;
+}
+
+.hljs-regexp {
+  color: #BB6688;
+}
+
+.hljs-deletion {
+  color: #A00000;
+}
+
+.hljs-addition {
+  color: #00A000;
+}
+
+/* Decorator / @ */
+.hljs-decorator {
+  color: #AA22FF;
+}
+
+/* ===== Scrollbar styling ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
 }
